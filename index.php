@@ -45,11 +45,12 @@ if($sticky && $this->is('index') || $this->is('front')){
 <main class="layout" id="content-inner">
 <div class="recent-posts" id="recent-posts">
 <?php 
+$k = $m = $g = 0;
 if($this->options->googleadsense != ""):
-$i=1;
+    $i=1;
 if($this->options->pageSize<=5)
 {
-    $k=$m=$g=3;
+    $k = $m = $g = 3;
 }else if($this->options->pageSize==10)
 {
     $k=rand(3,4);
